@@ -170,6 +170,18 @@ button {
     color: var(--primary-color) !important;
 }
 
+/*Inner page grid container*/
+.page-container {
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    margin: 2rem 0;
+    grid-gap: 1.5rem;
+}
+
+.page-container article {
+    grid-row: 1 / span 3;
+}
+
 /*Navigation*/
 #main-nav {
     position: sticky;
@@ -279,4 +291,22 @@ button {
 
 #main-footer .footer-container button {
     width: 90%;
+}
+
+#article .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eeeeee;
+    padding: 0.5rem;
+}
+
+#article .meta .category {
+    margin: 0.4rem;
+}
+
+#categories .list li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
